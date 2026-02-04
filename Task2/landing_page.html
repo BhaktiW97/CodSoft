@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>9Teen - Glow up Tips</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI', sans-serif; }
+body { 
+    background: url('skin3.webp') no-repeat center center fixed;
+    background-size: cover;
+    color:#333;
+    line-height:1.5;
+    scroll-behavior: smooth;
+}
+a { text-decoration:none; color:inherit; }
+header {
+    background: linear-gradient(90deg, #ffb6c1, #ffa6b9);
+    padding:15px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:#fff;
+    box-shadow:0 5px 10px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 1200px;
+    position: sticky;
+    top:0;
+    z-index: 1000;
+}
+header h1 { font-size:26px; font-weight:bold; }
+nav a { margin-left:15px; font-weight:bold; color:#fff; transition:0.3s; }
+nav a:hover { color:#ffe0eb; transform: scale(1.05); }
+
+/* Hero-style Sections */
+.section-hero {
+    display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:30px;
+    padding:60px 20px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, rgba(255,228,225,0.85), rgba(255,245,238,0.85));
+    animation: fadeIn 1s ease-in-out;
+}
+.section-hero img { width:100%; max-width:350px; border-radius:20px; box-shadow:0 5px 20px rgba(0,0,0,0.2); }
+.section-hero .text { flex:1; min-width:250px; text-align:left; }
+.section-hero h2 { font-size:36px; color:#ff6f91; margin-bottom:15px; }
+.section-hero p { font-size:18px; margin-bottom:20px; color:#333; }
+.section-hero .quote { font-size:16px; font-style:italic; color:#ff92a9; border-left:4px solid #ff6f91; padding-left:10px; }
+
+/* Product Cards inside Hero-style Section */
+.section-hero .product-grid { display:flex; flex-wrap:wrap; justify-content:center; gap:20px; margin-top:20px; }
+.section-hero .product-card { background:#fff; width:200px; padding:15px; border-radius:15px; text-align:center; box-shadow:0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; }
+.section-hero .product-card:hover { transform: translateY(-5px) scale(1.03); box-shadow:0 10px 20px rgba(0,0,0,0.15); }
+.section-hero .product-card img { width:100%; height:180px; object-fit:cover; border-radius:12px; margin-bottom:10px; }
+.section-hero .product-card h4 { color:#ff6f91; margin-bottom:8px; }
+.section-hero .product-card p { font-size:14px; color:#555; }
+
+/* Animations */
+@keyframes fadeIn { from {opacity:0; transform: translateY(20px);} to {opacity:1; transform: translateY(0);} }
+
+/* Footer */
+footer { background: linear-gradient(90deg, #ffb6c1, #ffa6b9); color:#fff; text-align:center; padding:20px; margin-top:30px; border-radius: 25px; font-style:italic; }
+
+/* Responsive */
+@media(max-width:768px) {
+    .section-hero { flex-direction:column; align-items:center; }
+    .section-hero h2 { font-size:28px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>9Teen</h1>
+    <nav>
+        <a href="#tips">Glow Up Tips</a>
+        <a href="#routine">Routine</a>
+        <a href="#products">Helpful Products</a>
+    </nav>
+</header>
+
+<!-- Hero -->
+<section class="section-hero">
+    <div>
+        <img src="skinCare.png" alt="Skin Care Image">
+    </div>
+    <div class="text">
+        <h2>Glow Naturally Every Day</h2>
+        <p>Teen-friendly skincare tips and routines for a radiant, healthy glow. Start your self-care journey today!</p>
+        <p class="quote">"Taking care of yourself is the best way to love the person you are becoming."</p>
+    </div>
+</section>
+
+<!-- Glow Up Tips -->
+<section class="section-hero" id="tips">
+    <div>
+        <img src="skin1.jpg" alt="Glow Up Image">
+    </div>
+    <div class="text">
+        <h2>Glow Up Tips for Teens</h2>
+        <ul>
+            <li>Wash your face twice daily with a gentle cleanser.</li>
+            <li>Always apply sunscreen before going outside.</li>
+            <li>Drink plenty of water for hydrated, glowing skin.</li>
+            <li>Eat fruits and vegetables rich in vitamins and antioxidants.</li>
+            <li>Get at least 7–8 hours of sleep every night.</li>
+            <li>Moisturize daily to keep your skin soft and healthy.</li>
+        </ul>
+        <p class="quote">"Glow from within, and the world will notice your light."</p>
+    </div>
+</section>
+
+<!-- Beginner Skincare Routine -->
+<section class="section-hero" id="routine">
+    <div>
+        <img src="skin3.webp" alt="Skincare Routine Image">
+    </div>
+    <div class="text">
+        <h2>Easy Skincare Routine for Beginners</h2>
+        <ol>
+            <li><strong>Morning:</strong> Cleanser → Moisturizer → Sunscreen.</li>
+            <li><strong>Evening:</strong> Cleanser → Toner (optional) → Moisturizer.</li>
+            <li><strong>Weekly:</strong> 1–2 times Face Mask for hydration or detox.</li>
+            <li>Always remove makeup before sleeping.</li>
+            <li>Consistency is key for glowing skin!</li>
+        </ol>
+        <p class="quote">"Your skin deserves love and care every single day."</p>
+    </div>
+</section>
+
+<!-- Helpful Products -->
+<section class="section-hero" id="products">
+    <div class="text">
+        <h2>Helpful Products for Your Glow</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="moisterizer.jpg" alt="Moisturizer">
+                <h4>Hydrating Moisturizer</h4>
+                <p>Importance: Keeps your skin soft, prevents dryness, and locks in moisture for a natural glow.</p>
+            </div>
+            <div class="product-card">
+                <img src="serum.avif" alt="Face Serum">
+                <h4>Vitamin C Serum</h4>
+                <p>Importance: Brightens dull skin, helps reduce dark spots, and boosts your skin's radiance.</p>
+            </div>
+            <div class="product-card">
+                <img src="face_mask.jpg" alt="Face Mask">
+                <h4>Revitalizing Face Mask</h4>
+                <p>Importance: Detoxifies the skin, tightens pores, and rejuvenates tired skin for a healthy glow.</p>
+            </div>
+        </div>
+        <p class="quote">"Use the right products consistently for your best skin."</p>
+    </div>
+    <div>
+        <img src="skin2.jpg" alt="Products Image">
+    </div>
+</section>
+
+<footer>
+    <p>Beautiful skin begins with care and love </p>
+</footer>
+
+</body>
+</html>
